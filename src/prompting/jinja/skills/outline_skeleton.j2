@@ -1,0 +1,27 @@
+{% include 'memory/core.j2' %}
+Task overview: {{ state.working.task_overview }}
+Actionable insights: {{ state.working.actionable_insights }}
+
+Design 3-6 sections that cover the end-to-end lifecycle of the task.
+Sections should have a name, intent/objective, and placeholder items.
+
+Return JSON:
+{
+  "ai_response": "How the checklist is structured.",
+  "sections": [
+    {
+      "name": "Phase name",
+      "objective": "Purpose of this phase",
+      "items": [
+        {
+          "identifier": "S1-I1",
+          "title": "Placeholder action",
+          "description": "Outcome",
+          "sub_steps": [],
+          "acceptance_criteria": [],
+          "prerequisites": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{% include 'memory/core.j2' %}
+Latest draft:
+{{ state.working.draft_package.sections if state.working.draft_package else [] }}
+
+Add sub-steps, prerequisites, and acceptance criteria for each item.
+Highlight hidden dependencies or sequencing constraints.
+
+Return JSON:
+{
+  "ai_response": "Summary of the depth that was added.",
+  "sections": [
+    {
+      "name": "Phase name",
+      "objective": "Purpose",
+      "items": [
+        {
+          "identifier": "S1-I1",
+          "title": "Action",
+          "description": "Outcome",
+          "sub_steps": ["step"],
+          "acceptance_criteria": ["check"],
+          "prerequisites": ["requirement"]
+        }
+      ]
+    }
+  ]
+}

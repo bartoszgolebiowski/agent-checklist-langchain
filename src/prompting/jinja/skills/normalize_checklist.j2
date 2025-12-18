@@ -1,0 +1,27 @@
+{% include 'memory/core.j2' %}
+Deepened checklist:
+{{ state.working.draft_package.sections if state.working.draft_package else [] }}
+
+Remove duplicates, align phrasing, and ensure each item has a single clear outcome.
+Return the cleaned structure.
+
+JSON schema:
+{
+  "ai_response": "How phrasing and ordering were normalized.",
+  "sections": [
+    {
+      "name": "Phase name",
+      "objective": "Purpose",
+      "items": [
+        {
+          "identifier": "S1-I1",
+          "title": "Action",
+          "description": "Outcome",
+          "sub_steps": ["step"],
+          "acceptance_criteria": ["check"],
+          "prerequisites": ["requirement"]
+        }
+      ]
+    }
+  ]
+}

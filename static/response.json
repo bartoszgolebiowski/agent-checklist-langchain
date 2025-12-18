@@ -1,0 +1,273 @@
+{
+  "phase": "emitting_checklist",
+  "message": "Your comprehensive guitar learning checklist is now ready, designed as a systems-thinking roadmap to take you from beginner to confident player. It starts with essential open chords in bite-sized phases to build strength without frustration, expands to core progressions tied to real songs for quick wins, applies them in musical contexts, and ends with variations to fuel creativity and prevent plateaus. Highlights include limiting initial overload by focusing on just four chords first, daily short drills for retention, and logs to track your steady progress—all backed by proven methods to slash overwhelm and boost motivation. If you have questions about adapting this to your setup, specific songs, or pace, just let me know.",
+  "sections": [
+    {
+      "name": "Setup and Initial Chords",
+      "objective": "Establish proper technique and master four essential open chords to build finger strength and confidence without overload.",
+      "items": [
+        {
+          "identifier": "S1-I1",
+          "title": "Acquire and tune your guitar",
+          "description": "Ensure you have the right equipment and can maintain basic tuning to start playing cleanly.",
+          "sub_steps": [
+            "Select an acoustic or electric guitar suitable for beginners.",
+            "Download a free tuner app like Guitar Tuna.",
+            "Practice tuning daily until it becomes intuitive."
+          ],
+          "acceptance_criteria": [
+            "Guitar is in standard EADGBE tuning.",
+            "You can tune by ear or app within 2 minutes."
+          ],
+          "prerequisites": ["None"]
+        },
+        {
+          "identifier": "S1-I2",
+          "title": "Learn Em chord fretting",
+          "description": "Master the E minor chord shape for clean ringing notes.",
+          "sub_steps": [
+            "Place fingers on frets 2 (A string), 2 (D string), and open low E.",
+            "Strum slowly, adjusting for buzz-free sound.",
+            "Hold for 30 seconds, release, repeat 10 times."
+          ],
+          "acceptance_criteria": [
+            "All strings ring clearly when strummed.",
+            "No buzzing or muted notes."
+          ],
+          "prerequisites": ["Guitar tuned"]
+        },
+        {
+          "identifier": "S1-I3",
+          "title": "Practice E to Em transitions",
+          "description": "Switch smoothly between E major and E minor in under 5 seconds.",
+          "sub_steps": [
+            "Fret E major (index on 1st fret G string, middle on 2nd fret A and D).",
+            "Alternate strumming each chord 4 times.",
+            "Time switches, aiming for fluidity."
+          ],
+          "acceptance_criteria": [
+            "Transitions take less than 3 seconds.",
+            "Chords sound distinct and clean."
+          ],
+          "prerequisites": ["Em and E chords mastered individually"]
+        },
+        {
+          "identifier": "S1-I4",
+          "title": "Introduce A and Am chords",
+          "description": "Add A major and A minor to your repertoire with focused drills.",
+          "sub_steps": [
+            "Learn A (index/ring on 2nd fret D/G, middle on 2nd fret B).",
+            "Am similar but barred index on 1st fret.",
+            "Practice pairs: A to Am, then integrate with E/Em."
+          ],
+          "acceptance_criteria": [
+            "All four chords switch in sequence without errors.",
+            "Daily 10-minute session completed."
+          ],
+          "prerequisites": ["E and Em transitions smooth"]
+        }
+      ]
+    },
+    {
+      "name": "Core Chord Expansion",
+      "objective": "Introduce G, C, D majors alongside Em to form a versatile set for common progressions, emphasizing context in simple patterns.",
+      "items": [
+        {
+          "identifier": "S2-I1",
+          "title": "Master G major chord",
+          "description": "Fret and strum G cleanly to expand your chord vocabulary.",
+          "sub_steps": [
+            "Place index on 2nd fret A, middle on 3rd fret low E, ring on 3rd fret B, pinky on 3rd fret high E.",
+            "Strum from low E, mute if needed.",
+            "Hold and release 20 times."
+          ],
+          "acceptance_criteria": [
+            "Full, buzz-free G chord sound.",
+            "Comfortable finger placement."
+          ],
+          "prerequisites": ["Initial four chords solid"]
+        },
+        {
+          "identifier": "S2-I2",
+          "title": "Learn C and D majors",
+          "description": "Add C (easier open) and D to enable I-IV-V progressions.",
+          "sub_steps": [
+            "C: Ring on 3rd fret A, middle on 2nd fret D, index on 1st fret B.",
+            "D: Index/middle/ring on 2nd fret G/B/high E.",
+            "Practice individually with metronome at 60 BPM."
+          ],
+          "acceptance_criteria": [
+            "Clean strums on C and D.",
+            "No finger cramps after 5 minutes."
+          ],
+          "prerequisites": ["G major mastered"]
+        },
+        {
+          "identifier": "S2-I3",
+          "title": "Practice G-C-D-Em sequences",
+          "description": "Drill basic progressions like G-Em-C-D for muscle memory.",
+          "sub_steps": [
+            "Strum each chord 4 beats, switch in rhythm.",
+            "Use down-strum pattern: down-down-up.",
+            "Incorporate capo on 2nd fret for variety."
+          ],
+          "acceptance_criteria": [
+            "Full progression cycles in under 30 seconds.",
+            "Applies to at least one example like 'Wonderwall' intro."
+          ],
+          "prerequisites": ["All five chords fretted cleanly"]
+        },
+        {
+          "identifier": "S2-I4",
+          "title": "Daily transition drills",
+          "description": "Reinforce switching between the core set in short, focused sessions.",
+          "sub_steps": [
+            "Pair chords: G to C, D to Em, etc.",
+            "Time 2-3 minute bursts, 3x daily.",
+            "Track improvement in a practice log."
+          ],
+          "acceptance_criteria": [
+            "Switches fluid at 80 BPM.",
+            "Log shows consistent practice."
+          ],
+          "prerequisites": ["Chord shapes known"]
+        }
+      ]
+    },
+    {
+      "name": "Progression Application",
+      "objective": "Apply chords to real music through I-IV-V and I-V-vi-IV patterns, building rhythm and song context.",
+      "items": [
+        {
+          "identifier": "S3-I1",
+          "title": "Identify I-IV-V in songs",
+          "description": "Recognize and play this progression in 2-3 simple tracks.",
+          "sub_steps": [
+            "Study examples: G (I)-C (IV)-D (V) in 'Twist and Shout'.",
+            "Transpose with capo if needed.",
+            "Strum along with recording."
+          ],
+          "acceptance_criteria": [
+            "Play progression matching song tempo.",
+            "Identifies root chords correctly."
+          ],
+          "prerequisites": ["Core chords mastered"]
+        },
+        {
+          "identifier": "S3-I2",
+          "title": "Practice I-V-vi-IV progression",
+          "description": "Master this versatile sequence using your chord set.",
+          "sub_steps": [
+            "Example: G-D-Em-C in 'Let It Be' style.",
+            "Vary strumming: down-up patterns at 70 BPM.",
+            "Play full loop 10 times."
+          ],
+          "acceptance_criteria": [
+            "Smooth cycle without stopping.",
+            "Applies to one full verse of a song."
+          ],
+          "prerequisites": ["I-IV-V comfortable"]
+        },
+        {
+          "identifier": "S3-I3",
+          "title": "Incorporate basic strumming",
+          "description": "Develop rhythm skills synced with progressions.",
+          "sub_steps": [
+            "Learn patterns: D-D-U-U-D-U.",
+            "Practice over progressions with metronome.",
+            "Record self to check timing."
+          ],
+          "acceptance_criteria": [
+            "Strumming consistent with beats.",
+            "No rushing or dragging."
+          ],
+          "prerequisites": ["Progressions known"]
+        },
+        {
+          "identifier": "S3-I4",
+          "title": "Perform a simple song",
+          "description": "Put it together in a beginner-friendly tune like 'Horse with No Name'.",
+          "sub_steps": [
+            "Break into sections: verse, chorus.",
+            "Practice slowly, then full speed.",
+            "Share recording for feedback."
+          ],
+          "acceptance_criteria": [
+            "Complete song playable end-to-end.",
+            "Basic chords smooth, timing solid."
+          ],
+          "prerequisites": ["Strumming and progressions integrated"]
+        }
+      ]
+    },
+    {
+      "name": "Variation and Advancement",
+      "objective": "Explore chord variations, minors, and creativity to adapt skills and prevent plateaus.",
+      "items": [
+        {
+          "identifier": "S4-I1",
+          "title": "Introduce minor chords: Am, Dm",
+          "description": "Build on A and D with minors for emotional depth.",
+          "sub_steps": [
+            "Am: Index bar 1st fret B/high E, ring 2nd fret D, middle 1st fret G.",
+            "Dm similar to Am shifted.",
+            "Practice transitions from majors."
+          ],
+          "acceptance_criteria": [
+            "Clean minors, switches under 4 seconds.",
+            "Integrates into prior progressions."
+          ],
+          "prerequisites": ["Core majors solid"]
+        },
+        {
+          "identifier": "S4-I2",
+          "title": "Basic seventh chords intro",
+          "description": "Add G7, C7 for bluesy flavor without complexity.",
+          "sub_steps": [
+            "G7: Standard G but lift pinky from high E.",
+            "C7: C with index on 1st fret D string.",
+            "Drill in I-IV-V contexts."
+          ],
+          "acceptance_criteria": [
+            "Voicings ring true.",
+            "Used in one progression variation."
+          ],
+          "prerequisites": ["Minors added"]
+        },
+        {
+          "identifier": "S4-I3",
+          "title": "Recognize progressions in popular songs",
+          "description": "Analyze 3-5 songs for I-IV-V or I-V-vi-IV.",
+          "sub_steps": [
+            "Use tabs or apps like Ultimate Guitar.",
+            "Adapt voicings: open to partial barre.",
+            "Play along with originals."
+          ],
+          "acceptance_criteria": [
+            "Identifies and plays at least two songs.",
+            "Adapts to key changes via capo."
+          ],
+          "prerequisites": ["Seventh chords basic"]
+        },
+        {
+          "identifier": "S4-I4",
+          "title": "Experiment with original riffs",
+          "description": "Create a simple 4-chord progression variation.",
+          "sub_steps": [
+            "Mix majors/minors/sevenths.",
+            "Strum and record your creation.",
+            "Vary tempo or pattern for fun."
+          ],
+          "acceptance_criteria": [
+            "Original progression playable.",
+            "Builds confidence in adaptation."
+          ],
+          "prerequisites": ["Song recognition done"]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "call_to_action": "Grab your guitar (or order one if needed), download a tuner app, and dive into the first item: Acquire and tune your guitar. Aim for 10 minutes today to get tuned up and start building momentum."
+  }
+}

@@ -1,0 +1,16 @@
+{% include 'memory/core.j2' %}
+Final checklist package:
+{{ state.working.final_package.sections if state.working.final_package else [] }}
+Highlights: {{ state.working.agent_summary }}
+
+Craft a confident message that:
+1. Summarizes the checklist readiness.
+2. Calls out any follow-up questions.
+3. Provides a clear call to action for the user.
+
+Return JSON:
+{
+  "ai_response": "Internal note describing the message.",
+  "final_message": "User-facing paragraph",
+  "call_to_action": "Specific next step for the user"
+}

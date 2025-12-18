@@ -1,0 +1,27 @@
+{% include 'memory/core.j2' %}
+Current skeleton:
+{{ state.working.draft_package.sections if state.working.draft_package else [] }}
+
+Expand each section with concrete checklist items tied to the task overview and insights.
+Each item must have a unique identifier, descriptive title, and short description.
+
+Return JSON:
+{
+  "ai_response": "What changed in this draft iteration.",
+  "sections": [
+    {
+      "name": "Phase name",
+      "objective": "Purpose",
+      "items": [
+        {
+          "identifier": "S1-I1",
+          "title": "Action",
+          "description": "Deliverable",
+          "sub_steps": [],
+          "acceptance_criteria": [],
+          "prerequisites": []
+        }
+      ]
+    }
+  ]
+}

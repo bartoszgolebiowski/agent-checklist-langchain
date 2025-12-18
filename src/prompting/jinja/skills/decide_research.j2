@@ -1,0 +1,15 @@
+{% include 'memory/core.j2' %}
+Scope notes: {{ state.working.scope_notes }}
+Assumptions: {{ state.working.assumptions }}
+Edge cases: {{ state.working.edge_cases }}
+
+Determine whether public best-practices or compliance data are required before drafting the checklist.
+If so, pose concrete research questions that a quick web scan should answer.
+
+Return JSON:
+{
+  "ai_response": "Short rationale for the decision.",
+  "needs_research": true,
+  "justification": "why research matters or not",
+  "research_questions": ["question", "question"]
+}

@@ -1,0 +1,18 @@
+{% include 'memory/core.j2' %}
+Selected sources:
+{{ state.working.selected_sources }}
+
+Extract unique signals, standards, and failure modes mentioned across the sources.
+Each signal must map to a concrete checklist implication.
+
+Return JSON:
+{
+  "ai_response": "Brief explanation of the dominant themes.",
+  "signals": [
+    {
+      "source_title": "Where this insight came from",
+      "signal": "What the source emphasized",
+      "implication": "How it changes the checklist"
+    }
+  ]
+}

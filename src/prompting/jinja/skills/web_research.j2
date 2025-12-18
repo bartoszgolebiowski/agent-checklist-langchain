@@ -1,0 +1,18 @@
+{% include 'memory/core.j2' %}
+Research questions to satisfy:
+{{ state.working.research_questions }}
+
+Simulate a 5-minute web scan. Propose credible sources (standards, whitepapers, audits) and paraphrase the insight you extracted from each. Cite realistic URLs.
+
+Return JSON:
+{
+  "ai_response": "Narrate how you triangulated the sources.",
+  "findings": [
+    {
+      "title": "Source title",
+      "url": "https://example.com",
+      "summary": "Key takeaways",
+      "credibility": "Why it is trustworthy"
+    }
+  ]
+}

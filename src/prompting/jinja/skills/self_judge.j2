@@ -1,0 +1,19 @@
+{% include 'memory/core.j2' %}
+Checklist ready for self-review:
+{{ state.working.normalized_package.sections if state.working.normalized_package else [] }}
+
+Score the checklist from 0-1.0 using this rubric:
+- Coverage of goals & constraints
+- Procedural depth and verifiability
+- Sequencing and risk mitigation
+Provide at least two strengths and two gaps.
+Threshold = 0.82.
+
+Return JSON:
+{
+  "ai_response": "Concise verdict.",
+  "score": 0.91,
+  "threshold_met": true,
+  "strengths": ["strength"],
+  "gaps": ["gap"]
+}

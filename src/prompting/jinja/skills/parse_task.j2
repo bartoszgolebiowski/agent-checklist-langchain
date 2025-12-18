@@ -1,0 +1,18 @@
+{% include 'memory/core.j2' %}
+You just received the following free-form request:
+"""
+{{ state.working.task_input }}
+"""
+
+1. Rephrase the goal in one decisive sentence.
+2. Extract explicit constraints, audience expectations, and measurable success criteria.
+3. Be concise. No bullet should exceed 20 words.
+
+Return a JSON object with the following fields:
+{
+  "ai_response": "Short natural-language recap for the user.",
+  "goal": "Single sentence goal",
+  "constraints": ["constraint 1", "constraint 2"],
+  "audience": ["stakeholder A", "stakeholder B"],
+  "success_criteria": ["observable result", "metric"]
+}

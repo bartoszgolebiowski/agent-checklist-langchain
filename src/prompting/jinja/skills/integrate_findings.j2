@@ -1,0 +1,19 @@
+{% include 'memory/core.j2' %}
+Signals captured so far:
+{{ state.working.research_signals }}
+Scope reminders: {{ state.working.scope_notes }}
+
+Translate the signals into actionable insights that will shape the checklist.
+Each insight needs an area focus, a recommendation, and the risk mitigated.
+
+Return JSON:
+{
+  "ai_response": "Summary of how research shifted the plan.",
+  "actionable_insights": [
+    {
+      "area": "Topic or phase",
+      "recommendation": "Concrete action to enforce",
+      "risk_mitigated": "What goes wrong if skipped"
+    }
+  ]
+}

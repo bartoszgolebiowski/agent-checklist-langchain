@@ -1,0 +1,30 @@
+{% include 'memory/core.j2' %}
+Normalized checklist:
+{{ state.working.normalized_package.sections if state.working.normalized_package else [] }}
+Research highlights: {{ state.working.actionable_insights }}
+
+Produce the final version suitable for handoff.
+Add short highlights and any handoff warnings.
+
+Return JSON:
+{
+  "ai_response": "Summary of what is locked.",
+  "sections": [
+    {
+      "name": "Phase name",
+      "objective": "Purpose",
+      "items": [
+        {
+          "identifier": "S1-I1",
+          "title": "Action",
+          "description": "Outcome",
+          "sub_steps": ["step"],
+          "acceptance_criteria": ["check"],
+          "prerequisites": ["requirement"]
+        }
+      ]
+    }
+  ],
+  "highlights": ["notable improvement"],
+  "handoff_notes": ["dependency or reminder"]
+}

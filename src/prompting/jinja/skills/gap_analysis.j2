@@ -1,0 +1,18 @@
+{% include 'memory/core.j2' %}
+Self-judge summary:
+Score: {{ state.workflow.quality_score }}
+Notes: {{ state.working.agent_summary }}
+
+Diagnose why the checklist missed the threshold.
+Route to one of:
+- "needs_research": external knowledge gaps remain.
+- "needs_depth": structure is fine but steps lack rigor.
+- "ready": acceptable after documentation tweaks.
+
+Return JSON:
+{
+  "ai_response": "Reasoning behind the route.",
+  "route": "needs_depth",
+  "reason": "Root cause",
+  "next_focus": "What to do next"
+}

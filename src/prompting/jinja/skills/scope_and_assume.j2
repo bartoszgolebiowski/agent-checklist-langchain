@@ -1,0 +1,14 @@
+{% include 'memory/core.j2' %}
+Current task overview:
+{{ state.working.task_overview }}
+
+Clarify the scope, key assumptions, and critical edge cases the checklist must cover.
+Group the notes by theme if helpful, but keep text succinct.
+
+Return JSON:
+{
+  "ai_response": "One paragraph summarizing how you framed the scope.",
+  "scope_notes": ["succinct scope bullet"],
+  "assumptions": ["explicit assumption"],
+  "edge_cases": ["edge condition that must be tested"]
+}

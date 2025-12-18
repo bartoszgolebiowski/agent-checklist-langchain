@@ -1,0 +1,47 @@
+// State machine for the Checklist Agent workflow
+digraph ChecklistWorkflow {
+  rankdir=LR;
+  node [shape=box, style=rounded];
+
+  waiting_for_task_input [label="WAITING_FOR_TASK_INPUT"];
+  parsing_task [label="PARSING_TASK"];
+  scoping_and_assumptions [label="SCOPING_AND_ASSUMPTIONS"];
+  deciding_research [label="DECIDING_RESEARCH"];
+  web_research [label="WEB_RESEARCH"];
+  source_selection [label="SOURCE_SELECTION"];
+  extracting_signals [label="EXTRACTING_SIGNALS"];
+  integrating_findings [label="INTEGRATING_FINDINGS"];
+  outline_checklist_skeleton [label="OUTLINE_CHECKLIST_SKELETON"];
+  drafting_checklist [label="DRAFTING_CHECKLIST"];
+  deepening_checklist [label="DEEPENING_CHECKLIST"];
+  normalizing_checklist [label="NORMALIZING_CHECKLIST"];
+  self_judge [label="SELF_JUDGE"];
+  gap_analysis [label="GAP_ANALYSIS"];
+  finalizing_checklist [label="FINALIZING_CHECKLIST"];
+  emitting_checklist [label="EMITTING_CHECKLIST"];
+
+  // primary linear progression
+  waiting_for_task_input -> parsing_task;
+  parsing_task -> scoping_and_assumptions;
+  scoping_and_assumptions -> deciding_research;
+  deciding_research -> web_research;
+  web_research -> source_selection;
+  source_selection -> extracting_signals;
+  extracting_signals -> integrating_findings;
+  integrating_findings -> outline_checklist_skeleton;
+  outline_checklist_skeleton -> drafting_checklist;
+  drafting_checklist -> deepening_checklist;
+  deepening_checklist -> normalizing_checklist;
+  normalizing_checklist -> self_judge;
+  self_judge -> gap_analysis;
+  gap_analysis -> finalizing_checklist;
+  finalizing_checklist -> emitting_checklist;
+
+  // terminal transitions
+  emitting_checklist -> waiting_for_task_input [label="complete, ready for new task", style=dashed];
+
+  // tool interactions (external calls)
+  deciding_research -> web_research [label="invoke search tool", color=blue];
+  web_research -> source_selection [label="search results ready", color=blue];
+
+}

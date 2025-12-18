@@ -1,0 +1,19 @@
+{% include 'memory/core.j2' %}
+Candidate findings:
+{{ state.working.research_sources }}
+
+Select 3-5 sources that strike the best balance of credibility, recency, and applicability to the task context.
+Explain how each source will influence the checklist.
+
+Return JSON:
+{
+  "ai_response": "One paragraph recap of the chosen source mix.",
+  "selected_sources": [
+    {
+      "title": "Source title",
+      "url": "https://example.com",
+      "summary": "Targeted insight",
+      "credibility": "Reason it is reliable"
+    }
+  ]
+}
